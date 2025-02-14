@@ -1,0 +1,5 @@
+*.o
+*.out
+Fixed
+.vscode/
+.DS_Store
