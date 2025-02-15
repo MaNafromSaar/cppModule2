@@ -6,7 +6,7 @@
 /*   By: mnaumann <mnaumann@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 18:04:20 by mnaumann          #+#    #+#             */
-/*   Updated: 2025/02/15 11:11:10 by mnaumann         ###   ########.fr       */
+/*   Updated: 2025/02/15 11:14:02 by mnaumann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ Fixed Fixed::operator*(Fixed const &rhs) const {
 	return Fixed(this->toFloat() * rhs.toFloat());
 }
 
-// optional check for division by zero
+// optional check for division by zero, try without!
 Fixed Fixed::operator/(Fixed const &rhs) const {
 	if (rhs.toFloat() == 0)
 	{
