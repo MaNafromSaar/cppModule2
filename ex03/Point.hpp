@@ -6,7 +6,7 @@
 /*   By: mnaumann <mnaumann@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/15 11:29:33 by mnaumann          #+#    #+#             */
-/*   Updated: 2025/02/15 11:33:41 by mnaumann         ###   ########.fr       */
+/*   Updated: 2025/02/15 17:07:59 by mnaumann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,4 @@ class Point {
 };
 
 bool bsp(Point const a, Point const b, Point const c, Point const point);
+Fixed area(Point const a, Point const b, Point const c);

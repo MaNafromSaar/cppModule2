@@ -1,9 +1,11 @@
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -I. -std=c++11
 PATH_SRC = ./
-HEADERS = Fixed.hpp
+HEADERS = Fixed.hpp\
+	Point.hpp
 SRCS = main.cpp\
-	Fixed.cpp
+	Fixed.cpp\
+	Point.cpp
 OBJS = $(SRCS:.cpp=.o)
 EXECS = Fixed
 all: $(EXECS)

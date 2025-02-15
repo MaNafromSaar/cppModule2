@@ -6,7 +6,7 @@
 /*   By: mnaumann <mnaumann@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 18:04:20 by mnaumann          #+#    #+#             */
-/*   Updated: 2025/02/15 11:14:02 by mnaumann         ###   ########.fr       */
+/*   Updated: 2025/02/15 17:02:21 by mnaumann         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ Fixed::Fixed(float const value) {
 }
 
 Fixed::~Fixed() {
-	std::cout << "Destructor called" << std::endl;
+	//std::cout << "Destructor called" << std::endl;
 }
 
 std::ostream &operator<<(std::ostream &out, Fixed const &rhs) {
