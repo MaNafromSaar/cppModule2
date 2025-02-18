@@ -1,0 +1,29 @@
+# C++, BSP, Triangle Completeness, 2D Vector
+
+## Overview
+In the subject, there was a hint at a possible algorithm to use here. I didn't.
+
+## BSP (Binary Space Partition)
+Certainly a mighty method, as it has made `DOOM` possible and was the doctorate thesis of the founder of Adobe. But in my opinion, it's a cannon way too big to shoot at a 2D triangle. For those who want to do some research:
+
+- [YouTube: BSP Trees](https://www.youtube.com/watch?v=hYMZsMMlubg)
+- [YouTube: BSP Trees Explained](https://www.youtube.com/watch?v=kapLub9XSBU)
+- [Fabien Sanglard: Doom Classic Renderer](https://fabiensanglard.net/doomIphone/doomClassicRenderer.php)
+
+## Simpler Approach by Pure 2D Geometry
+If there is a point and a triangle given, just try to build triangles with that point substituting one vertex after another. If they add up to the area of the original triangle, it always was within.
+
+## Problems and Fixes
+- **Negative Quadrants**: 
+  - Usual approach: Cut at the axis and take the absolute value of each part.
+  - My approach: Shift it a good deal to the right and up. Stay positive all the while. If a shift by 50, 50 does not suffice, I could implement dynamic augmentation of those values but actually, I am more inclined to ask the user if he is aware of sensible construction of a triangle.
+
+- **Edges Included**: 
+  - Contrary to BSP, edges are included.
+  - I thought about applying some padding but with the fixed decimal point value being rather coarse, this would have given away possibly too much to be a good solution.
+  - Solution: A function to check whether the point is exactly on the line which is constructed with the original values. This only excludes a small corridor along the edges that mirrors the precision of the units used.
+
+---
+
+**Author**: Matthias Naumann  
+**GitHub**: [MaNafromSaar](https://github.com/MaNafromSaar)
