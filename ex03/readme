@@ -13,6 +13,34 @@ Certainly a mighty method, as it has made `DOOM` possible and was the doctorate 
 ## Simpler Approach by Pure 2D Geometry
 If there is a point and a triangle given, just try to build triangles with that point substituting one vertex after another. If they add up to the area of the original triangle, it always was within.
 
+### Sketch
+Here is a visual representation of the concept:
+
+#### Point Inside the Triangle
+```
+       A
+      / \
+     /   \
+    /  P  \
+   /_______\
+  B         C
+```
+- The point `P` is inside the triangle `ABC`.
+- The areas of the sub-triangles `APB`, `BPC`, and `CPA` add up to the area of the original triangle `ABC`.
+
+#### Point Outside the Triangle
+```
+       A
+      / \
+     /   \
+    /     \
+   /_______\
+  B         C
+       P
+```
+- The point `P` is outside the triangle `ABC`.
+- The areas of the sub-triangles `APB`, `BPC`, and `CPA` do not add up to the area of the original triangle `ABC`.
+
 ## Problems and Fixes
 - **Negative Quadrants**: 
   - Usual approach: Cut at the axis and take the absolute value of each part.
